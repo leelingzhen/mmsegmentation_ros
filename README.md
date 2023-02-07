@@ -32,18 +32,3 @@ This is a ROS package for segmentation, which utilizes the toolbox [mmsegmentati
    pip install rospkg
    ```
 
-## ROS Interfaces
-
-### params
-
-- `~publish_rate`: the debug image publish rate. default: 50hz
-- `~is_service`: whether or not to use service instead of subscribe-publish
-- `~visualization`: whether or not to show the debug image
-
-### topics
-
-- `~debug_image`: publish the debug image
-- `~objects`: publish the inference result, containing the information of detected objects
-- `~image`: subscribe the input image.
-
-> Thanks: [mmdetection-ros](https://github.com/jcuic5/mmdetection-ros)
