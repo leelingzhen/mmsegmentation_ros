@@ -78,8 +78,6 @@ def main():
     rospy.init_node('semantic_masks', anonymous=True)
     rospy.Subscriber('/image_transport/image_decompressed',
                      Image, image_callback)
-    # rospy.Subscriber('/cam_front/raw',
-    #                  Image, image_callback)
 
     rospy.spin()
 
